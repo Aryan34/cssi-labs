@@ -21,6 +21,17 @@
         <div class="content">
             <h2 class="has-text-centered mt-6">View Your Messages!</h2>
         </div>
+        <div class="content">
+            <article id="error" class="message is-danger is-hidden">
+                <div class="message-header">
+                    <p>Error</p>
+                </div>
+                <div id="error-text" class="message-body">
+                    Incorrect Password
+                </div>
+                <div>Time left = <span id="timer"></span></div>
+            </article>
+        </div>
         <div id="passcodeInput" class="hero-body has-text-centered">
             <div class="login">
             <form action="javascript:void(0);">
@@ -29,7 +40,8 @@
                         <input class="input is-medium is-rounded" type="text" placeholder="What's the passcode?" id="passcode" required />
                     </div>
                 </div>
-                <button class="button is-block is-fullwidth is-primary is-medium is-rounded" type="submit" id="viewMsg" onclick="getMessages()>
+                <button
+                    class="button is-block is-fullwidth is-primary is-medium is-rounded" type="submit" id="viewMsg" onclick="getMessages()">
                     Click Here
                 </button>
             </form>
@@ -37,7 +49,7 @@
             </div>
         </div>
         <section class="container">
-            <h2 id="message" class="subtitle is-4"></h2>
+            <h2 id="message" class="subtitle is-4"> Messages </h2>
         </section>
 
     </section>
